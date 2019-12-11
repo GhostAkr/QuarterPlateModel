@@ -1,0 +1,4 @@
+#!/bin/bash
+export ASTER_TMPDIR=/tmp
+wrap=$(which xterm && echo ' -e ')
+as_run --num_job=30048-0002-GAKubuntuDesktop export 2> ./logs/stderr_command_salome.log
