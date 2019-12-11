@@ -2,11 +2,11 @@
   "history": {
     "cases": [
       {
-        "name": "RunCase_1",
+        "name": "MainCase",
         "stages": [
           1
         ],
-        "baseFolder": "RunCase_1"
+        "baseFolder": "MainCase"
       },
       {
         "name": "CurrentCase",
@@ -33,18 +33,18 @@
         ],
         "result": {
           "job": {
-            "jobid": "1",
+            "jobid": "2",
             "mode": "Interactive",
-            "name": "RunCase_1_MainStage",
+            "name": "MainCase_MainStage",
             "server": "localhost",
             "memory": 2048,
             "time": "00:15:00",
             "version": "stable",
-            "startTime": "Wed Dec 11 20:25:09 2019",
-            "endTime": "Wed Dec 11 20:25:16 2019",
+            "startTime": "Wed Dec 11 20:38:13 2019",
+            "endTime": "Wed Dec 11 20:38:19 2019",
             "folder": "/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files",
             "wckey": "P10WB:ASTER",
-            "dumpString": "<?xml version=\"1.0\"?>\n<!--SALOME Launcher job-->\n<jobs>\n  <job type=\"command_salome\" name=\"RunCase_1_MainStage\">\n    <user_part>\n      <job_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/RunCase_1/Result-MainStage/launcher_script</job_file>\n      <work_directory>/tmp/asterstudy_workdir_root/root-GAKubuntuDesktop-Wed-11-202509.907</work_directory>\n      <result_directory>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/RunCase_1/Result-MainStage</result_directory>\n      <files>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/RunCase_1/Result-MainStage/RunCase_1_MainStage.comm</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/Mesh.med</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/RunCase_1/Result-MainStage/export</in_file>\n        <out_file>QuarterPlate.rmed</out_file>\n        <out_file>message</out_file>\n        <out_file>base-stage1</out_file>\n      </files>\n      <resource_params>\n        <name>localhost</name>\n        <nb_proc>1</nb_proc>\n        <nb_node>1</nb_node>\n      </resource_params>\n      <maximum_duration>00:15:00</maximum_duration>\n      <wckey>P10WB:ASTER</wckey>\n    </user_part>\n    <run_part>\n      <job_state>FINISHED</job_state>\n      <job_reference>0</job_reference>\n    </run_part>\n  </job>\n</jobs>\n"
+            "dumpString": "<?xml version=\"1.0\"?>\n<!--SALOME Launcher job-->\n<jobs>\n  <job type=\"command_salome\" name=\"MainCase_MainStage\">\n    <user_part>\n      <job_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage/launcher_script</job_file>\n      <work_directory>/tmp/asterstudy_workdir_root/root-GAKubuntuDesktop-Wed-11-203812.004</work_directory>\n      <result_directory>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage</result_directory>\n      <files>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage/MainCase_MainStage.comm</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/Mesh.med</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage/export</in_file>\n        <out_file>QuarterPlate.rmed</out_file>\n        <out_file>message</out_file>\n        <out_file>base-stage1</out_file>\n      </files>\n      <resource_params>\n        <name>localhost</name>\n        <nb_proc>1</nb_proc>\n        <nb_node>1</nb_node>\n      </resource_params>\n      <maximum_duration>00:15:00</maximum_duration>\n      <wckey>P10WB:ASTER</wckey>\n    </user_part>\n    <run_part>\n      <job_state>FINISHED</job_state>\n      <job_reference>0</job_reference>\n    </run_part>\n  </job>\n</jobs>\n"
           },
           "resstate": 16
         },
