@@ -18,7 +18,7 @@ model = AFFE_MODELE(identifier='2:1',
 
 Steel = DEFI_MATERIAU(identifier='3:1',
                       ELAS=_F(E=200000.0,
-                              NU=0.25))
+                              NU=0.3))
 
 fieldmat = AFFE_MATERIAU(identifier='4:1',
                          AFFE=_F(MATER=(Steel, ),

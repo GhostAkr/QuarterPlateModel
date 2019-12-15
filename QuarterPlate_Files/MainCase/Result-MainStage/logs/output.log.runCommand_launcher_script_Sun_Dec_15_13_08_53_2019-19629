@@ -2,34 +2,34 @@
 --------------------------------------------------------------------------------
  Code_Aster execution
 
-<INFO> prepare environment in /tmp/root-GAKubuntuDesktop-interactif_32657-0003-GAKubuntuDesktop
+<INFO> prepare environment in /tmp/root-GAKubuntuDesktop-interactif_19627-0001-GAKubuntuDesktop
 
 --------------------------------------------------------------------------------
  Copying datas
 
-copying .../root-GAKubuntuDesktop-Wed-11-203812.004/MainCase_MainStage.comm...
+copying .../root-GAKubuntuDesktop-Sun-15-130853.703/MainCase_MainStage.comm...
                                                                         [  OK  ]
-copying .../root-GAKubuntuDesktop-Wed-11-203812.004/Mesh.med...         [  OK  ]
+copying .../root-GAKubuntuDesktop-Sun-15-130853.703/Mesh.med...         [  OK  ]
 <INFO> Parameters : memory 2048 MB - time limit 900 s
 
 --------------------------------------------------------------------------------
- Content of /tmp/root-GAKubuntuDesktop-interactif_32657-0003-GAKubuntuDesktop before execution
+ Content of /tmp/root-GAKubuntuDesktop-interactif_19627-0001-GAKubuntuDesktop before execution
 
 total 88
-drwx------  3 root root  4096 Dec 11 20:38 .
-drwxrwxrwt 40 root root  4096 Dec 11 20:38 ..
--rwxr-xr-x  1 root root   879 Dec 11 20:38 32657-0003-GAKubuntuDesktop.export
-drwxr-xr-x  2 root root  4096 Dec 11 20:38 REPE_OUT
--rw-r--r--  1 root root  3521 Dec 11 20:38 config.txt
--rwxr-xr-x  1 root root  1828 Dec 11 20:38 fort.1.1
--rwxr-xr-x  1 root root 62581 Dec 11 20:38 fort.2
+drwx------  3 root root  4096 Dec 15 13:08 .
+drwxrwxrwt 32 root root  4096 Dec 15 13:08 ..
+-rwxr-xr-x  1 root root   879 Dec 15 13:08 19627-0001-GAKubuntuDesktop.export
+drwxr-xr-x  2 root root  4096 Dec 15 13:08 REPE_OUT
+-rw-r--r--  1 root root  3521 Dec 15 13:08 config.txt
+-rwxr-xr-x  1 root root  1827 Dec 15 13:08 fort.1.1
+-rwxr-xr-x  1 root root 62581 Dec 15 13:08 fort.2
 
 
 --------------------------------------------------------------------------------
  Code_Aster run
 
 <INFO> Command line 1 :
-<INFO> /opt/salome_meca/V2019_univ/tools/Code_aster_stable-v144_smeca/bin/aster /opt/salome_meca/V2019_univ/tools/Code_aster_stable-v144_smeca/lib/aster/Execution/E_SUPERV.py -commandes fort.1 --num_job=32657-0003-GAKubuntuDesktop --mode=interactif --rep_outils=/opt/salome_meca/V2019_univ/tools/Code_aster_frontend-20190/outils --rep_mat=/opt/salome_meca/V2019_univ/tools/Code_aster_frontend-20190/../Code_aster_stable-v144_smeca/share/aster/materiau --rep_dex=/opt/salome_meca/V2019_univ/tools/Code_aster_frontend-20190/../Code_aster_stable-v144_smeca/share/aster/datg --numthreads=1 --suivi_batch --tpmax=900.0 --memjeveux=256.0
+<INFO> /opt/salome_meca/V2019_univ/tools/Code_aster_stable-v144_smeca/bin/aster /opt/salome_meca/V2019_univ/tools/Code_aster_stable-v144_smeca/lib/aster/Execution/E_SUPERV.py -commandes fort.1 --num_job=19627-0001-GAKubuntuDesktop --mode=interactif --rep_outils=/opt/salome_meca/V2019_univ/tools/Code_aster_frontend-20190/outils --rep_mat=/opt/salome_meca/V2019_univ/tools/Code_aster_frontend-20190/../Code_aster_stable-v144_smeca/share/aster/materiau --rep_dex=/opt/salome_meca/V2019_univ/tools/Code_aster_frontend-20190/../Code_aster_stable-v144_smeca/share/aster/datg --numthreads=1 --suivi_batch --tpmax=900.0 --memjeveux=256.0
 # ------------------------------------------------------------------------------------------
 # Impression du contenu du fichier de commandes à exécuter :
 # ------------------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ model = AFFE_MODELE(identifier='2:1',
 
 Steel = DEFI_MATERIAU(identifier='3:1',
                       ELAS=_F(E=200000.0,
-                              NU=0.25))
+                              NU=0.3))
 
 fieldmat = AFFE_MATERIAU(identifier='4:1',
                          AFFE=_F(MATER=(Steel, ),
@@ -103,7 +103,7 @@ FIN()
                 the revision 2708712c2a40 - branch  v14.4_smeca                 
                         Copyright EDF R & D 1991 - 2019                         
                                                                                 
-                    Exécution of:  Wed Dec 11 20:38:16 2019                     
+                    Exécution of:  Sun Dec 15 13:08:57 2019                     
                      Name of the machine:  GAKubuntuDesktop                     
                                Structure:  64bit                                
                                CPU type:  x86_64                                
@@ -125,7 +125,7 @@ FIN()
                   Mémoire limite pour l'exécution : 2048.00 Mo                  
                    consommée par l'initialisation : 408.63 Mo                   
                   par les objets du jeu de commandes : 3.09 Mo                  
-                 reste pour l'allocation dynamique : 1636.14 Mo                 
+                 reste pour l'allocation dynamique : 1636.15 Mo                 
                    Cut limiting files of exchange:  48.00 Go                    
                                                                                 
 
@@ -191,9 +191,9 @@ FIN()
 
  Second reading of the catalogues of the elements made. 
 
- End of reading (lasted 0.040011 S.)   
-  # Memory (Mo):    456.56 /    448.86 /     44.30 /     22.92 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0001 user+syst:          0.06S (syst:          0.05S, Elaps:          0.06S)
+ End of reading (lasted 0.156141 S.)   
+  # Memory (Mo):    456.57 /    448.73 /     44.30 /     22.92 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0001 user+syst:          0.10S (syst:          0.07S, Elaps:          0.19S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd0:1
@@ -211,7 +211,7 @@ Vérification du maillage.
 
 ------------ MAILLAGE mesh     - IMPRESSIONS NIVEAU  1 ------------
 
-ME-11-DECE-2019 20:38:16                                                        
+DI-15-DECE-2019 13:08:58                                                        
 
 NOMBRE DE NOEUDS                         991
 
@@ -232,8 +232,8 @@ NOMBRE DE GROUPES DE MAILLES               4
 
 --------------------------------------------------------------------------------
 
-  # Memory (Mo):    456.56 /    449.93 /     44.30 /     22.92 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0002 user+syst:          0.01S (syst:          0.01S, Elaps:          0.01S)
+  # Memory (Mo):    456.57 /    449.96 /     44.30 /     22.92 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0002 user+syst:          0.01S (syst:          0.00S, Elaps:          0.04S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd1:1
@@ -248,8 +248,8 @@ NOMBRE DE GROUPES DE MAILLES               4
 TRAITEMENT DU GROUP_MA: CD_Group                 DE      30 MAILLES
                              30 MAILLE(S) ONT ETE ORIENTEE(S)
 AU TOTAL      30 MAILLE(S) ORIENTEE(S) 
-  # Memory (Mo):    456.56 /    449.93 /     44.30 /     22.92 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0004 user+syst:          0.01S (syst:          0.00S, Elaps:          0.00S)
+  # Memory (Mo):    456.57 /    449.96 /     44.30 /     22.92 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0004 user+syst:          0.01S (syst:          0.01S, Elaps:          0.00S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd2:1
@@ -271,9 +271,9 @@ Sur les 1080 mailles du maillage mesh, on a demandé l'affectation de 1080, on a
  C_PLAN           QUAD4        MECPQU4          900
  C_PLAN           TRIA3        MECPTR3          30
                   SEG2         MEPLSE2          150
-#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.01      0.00      0.00
-  # Memory (Mo):    482.80 /    482.77 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0005 user+syst:          0.01S (syst:          0.00S, Elaps:          0.01S)
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.00      0.00      0.01
+  # Memory (Mo):    482.84 /    482.78 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0005 user+syst:          0.01S (syst:          0.00S, Elaps:          0.03S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd3:1
@@ -281,13 +281,13 @@ Sur les 1080 mailles du maillage mesh, on a demandé l'affectation de 1080, on a
   # Commands No:  0006 Concept of the type:  mater_sdaster
   # ------------------------------------------------------------------------------------------
   Steel = DEFI_MATERIAU(ELAS=_F(E=2.E5,
-                                NU=0.25,
+                                NU=0.3,
                                 COEF_AMOR=1.0,),
                         INFO=1,)
 
 Propriétés définies dans le matériau: ELAS.
-  # Memory (Mo):    482.80 /    482.77 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0006 user+syst:          0.00S (syst:          0.00S, Elaps:          0.01S)
+  # Memory (Mo):    482.84 /    482.78 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0006 user+syst:          0.01S (syst:          0.00S, Elaps:          0.01S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd4:1
@@ -299,8 +299,8 @@ Propriétés définies dans le matériau: ELAS.
                                    MATER=(Steel, ),),
                            INFO=1,)
 
-  # Memory (Mo):    482.80 /    482.77 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0007 user+syst:          0.01S (syst:          0.00S, Elaps:          0.00S)
+  # Memory (Mo):    482.84 /    482.78 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0007 user+syst:          0.01S (syst:          0.00S, Elaps:          0.01S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd5:1
@@ -317,8 +317,8 @@ Propriétés définies dans le matériau: ELAS.
                       DOUBLE_LAGRANGE='OUI',
                       INFO=1,)
 
-  # Memory (Mo):    483.06 /    482.90 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0008 user+syst:          0.00S (syst:          0.00S, Elaps:          0.01S)
+  # Memory (Mo):    483.06 /    482.91 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0008 user+syst:          0.01S (syst:          0.00S, Elaps:          0.02S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd6:1
@@ -332,8 +332,8 @@ Propriétés définies dans le matériau: ELAS.
                       DOUBLE_LAGRANGE='OUI',
                       INFO=1,)
 
-  # Memory (Mo):    483.06 /    482.90 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0009 user+syst:          0.01S (syst:          0.00S, Elaps:          0.01S)
+  # Memory (Mo):    483.06 /    482.91 /     44.30 /     34.16 (VmPeak / VmSize / Optimum / Minimum)
+  # Fin orders No:  0009 user+syst:          0.01S (syst:          0.00S, Elaps:          0.00S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd7:1
@@ -373,10 +373,10 @@ Propriétés définies dans le matériau: ELAS.
   Elle contient 18287 termes non nuls si elle est symétrique et 34468 termes non nuls si elle n'est pas symétrique.
   Soit un taux de remplissage de   0.777 %.
     Field stored  DEPL at time  0.000000000000e+00 for the sequence number  1
-#1      Resolution des systemes lineaires                 CPU (USER+SYST/SYST/ELAPS):      0.06      0.01      0.05
-#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.02      0.00      0.03
+#1      Resolution des systemes lineaires                 CPU (USER+SYST/SYST/ELAPS):      0.05      0.01      0.07
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.04      0.00      0.03
   # Memory (Mo):    495.14 /    487.50 /     44.30 /     34.44 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0010 user+syst:          0.09S (syst:          0.01S, Elaps:          0.08S)
+  # Fin orders No:  0010 user+syst:          0.11S (syst:          0.01S, Elaps:          0.15S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd8:1
@@ -391,9 +391,9 @@ Propriétés définies dans le matériau: ELAS.
                       CRITERE='RELATIF',
                       INFO=1,)
 
-#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.03      0.00      0.02
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.01      0.00      0.03
   # Memory (Mo):    495.14 /    488.48 /     44.30 /     35.24 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0011 user+syst:          0.05S (syst:          0.00S, Elaps:          0.05S)
+  # Fin orders No:  0011 user+syst:          0.04S (syst:          0.00S, Elaps:          0.05S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_cmd9:1
@@ -412,7 +412,7 @@ Propriétés définies dans le matériau: ELAS.
 
 Création du fichier au format MED 3.3.1.
   # Memory (Mo):    495.14 /    488.48 /     44.30 /     35.24 (VmPeak / VmSize / Optimum / Minimum)
-  # Fin orders No:  0012 user+syst:          0.02S (syst:          0.00S, Elaps:          0.02S)
+  # Fin orders No:  0012 user+syst:          0.03S (syst:          0.02S, Elaps:          0.03S)
   # ------------------------------------------------------------------------------------------
 
 .. __stg1_txt57
@@ -578,77 +578,77 @@ Création du fichier au format MED 3.3.1.
      - COMPREND LA MEMOIRE CONSOMMEE PAR  JEVEUX, 
        LE SUPERVISEUR PYTHON, LES LIBRAIRIES EXTERNES
   
- <I>       FIN D'EXECUTION LE : ME-11-DECE-2019 20:38:16
+ <I>       FIN D'EXECUTION LE : DI-15-DECE-2019 13:08:58
 
 
   <I> Informations sur les temps d'exécution
-      Temps cpu user total                    0.87 s
-      Temps cpu systeme total                 0.14 s
-      Temps elapsed total                     1.02 s
-      Temps restant                         808.98 s
+      Temps cpu user total                    0.98 s
+      Temps cpu systeme total                 0.22 s
+      Temps elapsed total                     1.60 s
+      Temps restant                         808.40 s
 
 
  The signup of the saved base is (with the address 0): 
-  f14a34beb203785b06958d130a118e98734f8db2 
+  5eecef10dd66a5b1958cdf10447d95769ed7eef5 
 
  ********************************************************************************
  * COMMAND                  :       USER :     SYSTEM :   USER+SYS :    ELAPSED *
  ********************************************************************************
- * init (jdc)               :       0.63 :       0.03 :       0.66 :       0.66 *
+ * init (jdc)               :       0.71 :       0.07 :       0.78 :       0.98 *
  *  . compile               :       0.00 :       0.00 :       0.00 :       0.00 *
- *  . exec_compile          :       0.11 :       0.00 :       0.11 :       0.11 *
+ *  . exec_compile          :       0.14 :       0.01 :       0.15 :       0.21 *
  *  . report                :       0.00 :       0.00 :       0.00 :       0.00 *
  *  . build                 :       0.00 :       0.00 :       0.00 :       0.00 *
- * DEBUT                    :       0.01 :       0.05 :       0.06 :       0.06 *
- * LIRE_MAILLAGE            :       0.00 :       0.01 :       0.01 :       0.01 *
- * MODI_MAILLAGE            :       0.01 :       0.00 :       0.01 :       0.00 *
- * AFFE_MODELE              :       0.01 :       0.00 :       0.01 :       0.01 *
- * DEFI_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.01 *
- * AFFE_MATERIAU            :       0.01 :       0.00 :       0.01 :       0.00 *
- * AFFE_CHAR_MECA           :       0.00 :       0.00 :       0.00 :       0.01 *
- * AFFE_CHAR_MECA           :       0.01 :       0.00 :       0.01 :       0.01 *
- * MECA_STATIQUE            :       0.08 :       0.01 :       0.09 :       0.08 *
- * CALC_CHAMP               :       0.05 :       0.00 :       0.05 :       0.05 *
- * IMPR_RESU                :       0.02 :       0.00 :       0.02 :       0.02 *
- * FIN                      :       0.03 :       0.04 :       0.07 :       0.08 *
- *  . part Superviseur      :       0.67 :       0.08 :       0.75 :       0.76 *
- *  . part Fortran          :       0.21 :       0.06 :       0.27 :       0.28 *
+ * DEBUT                    :       0.03 :       0.07 :       0.10 :       0.19 *
+ * LIRE_MAILLAGE            :       0.01 :       0.00 :       0.01 :       0.04 *
+ * MODI_MAILLAGE            :       0.00 :       0.01 :       0.01 :       0.00 *
+ * AFFE_MODELE              :       0.01 :       0.00 :       0.01 :       0.03 *
+ * DEFI_MATERIAU            :       0.01 :       0.00 :       0.01 :       0.01 *
+ * AFFE_MATERIAU            :       0.01 :       0.00 :       0.01 :       0.01 *
+ * AFFE_CHAR_MECA           :       0.01 :       0.00 :       0.01 :       0.02 *
+ * AFFE_CHAR_MECA           :       0.01 :       0.00 :       0.01 :       0.00 *
+ * MECA_STATIQUE            :       0.10 :       0.01 :       0.11 :       0.15 *
+ * CALC_CHAMP               :       0.04 :       0.00 :       0.04 :       0.05 *
+ * IMPR_RESU                :       0.01 :       0.02 :       0.03 :       0.03 *
+ * FIN                      :       0.03 :       0.04 :       0.07 :       0.07 *
+ *  . part Superviseur      :       0.76 :       0.14 :       0.90 :       1.22 *
+ *  . part Fortran          :       0.24 :       0.08 :       0.32 :       0.39 *
  ********************************************************************************
- * TOTAL_JOB                :       0.87 :       0.14 :       1.01 :       1.02 *
+ * TOTAL_JOB                :       0.98 :       0.22 :       1.20 :       1.60 *
  ********************************************************************************
 
 /opt/salome_meca/V2019_univ/tools/Code_aster_stable-v144_smeca/lib/aster/aster_settings.py:262: DeprecationWarning: this command line option is deprecated : --rep_outils
   coreopts.parse_args(argv or sys.argv)
-EXECUTION_CODE_ASTER_EXIT_32657-0003-GAKubuntuDesktop=0
+EXECUTION_CODE_ASTER_EXIT_19627-0001-GAKubuntuDesktop=0
 <INFO> Code_Aster run ended, diagnostic : OK
 
 --------------------------------------------------------------------------------
- Content of /tmp/root-GAKubuntuDesktop-interactif_32657-0003-GAKubuntuDesktop after execution
+ Content of /tmp/root-GAKubuntuDesktop-interactif_19627-0001-GAKubuntuDesktop after execution
 
 .:
 total 45732
-drwx------  3 root root     4096 Dec 11 20:38 .
-drwxrwxrwt 40 root root     4096 Dec 11 20:38 ..
--rwxr-xr-x  1 root root      879 Dec 11 20:38 32657-0003-GAKubuntuDesktop.export
-drwxr-xr-x  2 root root     4096 Dec 11 20:38 REPE_OUT
--rw-r--r--  1 root root     3521 Dec 11 20:38 config.txt
--rwxr-xr-x  1 root root     1828 Dec 11 20:38 fort.1
--rwxr-xr-x  1 root root     1828 Dec 11 20:38 fort.1.1
--rw-r--r--  1 root root        0 Dec 11 20:38 fort.15
--rwxr-xr-x  1 root root    62581 Dec 11 20:38 fort.2
--rw-r--r--  1 root root    30992 Dec 11 20:38 fort.6
--rw-r--r--  1 root root        0 Dec 11 20:38 fort.8
--rw-r--r--  1 root root   299023 Dec 11 20:38 fort.80
--rw-r--r--  1 root root        0 Dec 11 20:38 fort.9
--rw-r--r--  1 root root 39321608 Dec 11 20:38 glob.1
--rw-r--r--  1 root root       44 Dec 11 20:38 info_cpu
--rw-r--r--  1 root root  4606648 Dec 11 20:38 pick.1
--rw-r--r--  1 root root  2457608 Dec 11 20:38 vola.1
+drwx------  3 root root     4096 Dec 15 13:08 .
+drwxrwxrwt 32 root root     4096 Dec 15 13:08 ..
+-rwxr-xr-x  1 root root      879 Dec 15 13:08 19627-0001-GAKubuntuDesktop.export
+drwxr-xr-x  2 root root     4096 Dec 15 13:08 REPE_OUT
+-rw-r--r--  1 root root     3521 Dec 15 13:08 config.txt
+-rwxr-xr-x  1 root root     1827 Dec 15 13:08 fort.1
+-rwxr-xr-x  1 root root     1827 Dec 15 13:08 fort.1.1
+-rw-r--r--  1 root root        0 Dec 15 13:08 fort.15
+-rwxr-xr-x  1 root root    62581 Dec 15 13:08 fort.2
+-rw-r--r--  1 root root    30990 Dec 15 13:08 fort.6
+-rw-r--r--  1 root root        0 Dec 15 13:08 fort.8
+-rw-r--r--  1 root root   299023 Dec 15 13:08 fort.80
+-rw-r--r--  1 root root        0 Dec 15 13:08 fort.9
+-rw-r--r--  1 root root 39321608 Dec 15 13:08 glob.1
+-rw-r--r--  1 root root       44 Dec 15 13:08 info_cpu
+-rw-r--r--  1 root root  4606648 Dec 15 13:08 pick.1
+-rw-r--r--  1 root root  2457608 Dec 15 13:08 vola.1
 
 REPE_OUT:
 total 8
-drwxr-xr-x 2 root root 4096 Dec 11 20:38 .
-drwx------ 3 root root 4096 Dec 11 20:38 ..
+drwxr-xr-x 2 root root 4096 Dec 15 13:08 .
+drwx------ 3 root root 4096 Dec 15 13:08 ..
 
 
 --------------------------------------------------------------------------------
@@ -674,11 +674,11 @@ OK                 Code_Aster run ended
                                             cpu     system    cpu+sys    elapsed
  ---------------------------------------------------------------------------------
    Preparation of environment              0.00       0.00       0.00       0.00
-   Copying datas                           0.03       0.03       0.06       0.07
-   Code_Aster run                          2.40       0.34       2.74       2.70
-   Copying results                         0.04       0.07       0.11       0.11
+   Copying datas                           0.04       0.03       0.07       0.08
+   Code_Aster run                          2.48       0.44       2.92       3.36
+   Copying results                         0.01       0.10       0.11       0.11
  ---------------------------------------------------------------------------------
-   Total                                   2.64       0.61       3.25       3.20
+   Total                                   2.69       0.73       3.42       3.88
  ---------------------------------------------------------------------------------
 
 as_run 2018.1
