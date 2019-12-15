@@ -2,11 +2,11 @@
   "history": {
     "cases": [
       {
-        "name": "UsualPressure",
+        "name": "MainCase",
         "stages": [
           1
         ],
-        "baseFolder": "UsualPressure"
+        "baseFolder": "MainCase"
       },
       {
         "name": "CurrentCase",
@@ -21,30 +21,30 @@
         "text": "mesh = LIRE_MAILLAGE(FORMAT='MED', UNITE=2)\n\nmesh = MODI_MAILLAGE(reuse=mesh, MAILLAGE=mesh, ORIE_PEAU_2D=_F(GROUP_MA=('CD_Group', )))\n\nmodel = AFFE_MODELE(AFFE=_F(MODELISATION=('C_PLAN', ), PHENOMENE='MECANIQUE', TOUT='OUI'), MAILLAGE=mesh)\n\nSteel = DEFI_MATERIAU(ELAS=_F(E=200000.0, NU=0.3))\n\nfieldmat = AFFE_MATERIAU(AFFE=_F(MATER=(Steel, ), TOUT='OUI'), MODELE=model)\n\nBC = AFFE_CHAR_MECA(DDL_IMPO=(_F(DX=0.0, GROUP_MA=('AB_Group', )), _F(DY=0.0, GROUP_MA=('DE_Group', ))), MODELE=model)\n\nLD = AFFE_CHAR_MECA(MODELE=model, PRES_REP=_F(GROUP_MA=('CD_Group', ), PRES=-500.0))\n\nAnalysis = MECA_STATIQUE(CHAM_MATER=fieldmat, EXCIT=(_F(CHARGE=BC), _F(CHARGE=LD)), MODELE=model)\n\nResult = CALC_CHAMP(CONTRAINTE=('SIGM_NOEU', ), CRITERES=('SIEQ_NOEU', ), DEFORMATION=('EPSI_NOEU', ), RESULTAT=Analysis)\n\nIMPR_RESU(FORMAT='MED', RESU=_F(RESULTAT=Result), UNITE=80)",
         "files": [
           {
-            "handle": 80,
-            "filename": "/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate.rmed",
-            "attr": 2
-          },
-          {
             "handle": 2,
             "filename": "/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/Mesh.med",
             "attr": 1
+          },
+          {
+            "handle": 80,
+            "filename": "/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate.rmed",
+            "attr": 2
           }
         ],
         "result": {
           "job": {
             "jobid": "0",
             "mode": "Interactive",
-            "name": "UsualPressure_MainStage",
+            "name": "MainCase_MainStage",
             "server": "localhost",
             "memory": 2048,
             "time": "00:15:00",
             "version": "stable",
-            "startTime": "Sun Dec 15 12:54:15 2019",
-            "endTime": "Sun Dec 15 12:54:25 2019",
+            "startTime": "Sun Dec 15 13:26:37 2019",
+            "endTime": "Sun Dec 15 13:26:44 2019",
             "folder": "/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files",
             "wckey": "P10WB:ASTER",
-            "dumpString": "<?xml version=\"1.0\"?>\n<!--SALOME Launcher job-->\n<jobs>\n  <job type=\"command_salome\" name=\"UsualPressure_MainStage\">\n    <user_part>\n      <job_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/UsualPressure/Result-MainStage/launcher_script</job_file>\n      <work_directory>/tmp/asterstudy_workdir_root/root-GAKubuntuDesktop-Sun-15-125415.392</work_directory>\n      <result_directory>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/UsualPressure/Result-MainStage</result_directory>\n      <files>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/UsualPressure/Result-MainStage/UsualPressure_MainStage.comm</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/Mesh.med</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/UsualPressure/Result-MainStage/export</in_file>\n        <out_file>QuarterPlate.rmed</out_file>\n        <out_file>message</out_file>\n        <out_file>base-stage1</out_file>\n      </files>\n      <resource_params>\n        <name>localhost</name>\n        <nb_proc>1</nb_proc>\n        <nb_node>1</nb_node>\n      </resource_params>\n      <maximum_duration>00:15:00</maximum_duration>\n      <wckey>P10WB:ASTER</wckey>\n    </user_part>\n    <run_part>\n      <job_state>FINISHED</job_state>\n      <job_reference>0</job_reference>\n    </run_part>\n  </job>\n</jobs>\n"
+            "dumpString": "<?xml version=\"1.0\"?>\n<!--SALOME Launcher job-->\n<jobs>\n  <job type=\"command_salome\" name=\"MainCase_MainStage\">\n    <user_part>\n      <job_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage/launcher_script</job_file>\n      <work_directory>/tmp/asterstudy_workdir_root/root-GAKubuntuDesktop-Sun-15-132637.382</work_directory>\n      <result_directory>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage</result_directory>\n      <files>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage/MainCase_MainStage.comm</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/Mesh.med</in_file>\n        <in_file>/media/ghostakr/Data_1/Docs/Salome_Projects/CourseworkCalculations/QuarterPlate_Files/MainCase/Result-MainStage/export</in_file>\n        <out_file>QuarterPlate.rmed</out_file>\n        <out_file>message</out_file>\n        <out_file>base-stage1</out_file>\n      </files>\n      <resource_params>\n        <name>localhost</name>\n        <nb_proc>1</nb_proc>\n        <nb_node>1</nb_node>\n      </resource_params>\n      <maximum_duration>00:15:00</maximum_duration>\n      <wckey>P10WB:ASTER</wckey>\n    </user_part>\n    <run_part>\n      <job_state>FINISHED</job_state>\n      <job_reference>0</job_reference>\n    </run_part>\n  </job>\n</jobs>\n"
           },
           "resstate": 16
         },
