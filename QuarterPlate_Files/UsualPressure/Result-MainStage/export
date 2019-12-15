@@ -9,7 +9,7 @@ P ncpus 0
 P nomjob UsualPressure_MainStage
 P origine AsterStudy 0.11
 P server localhost
-P studyid 4650-0005-GAKubuntuDesktop
+P studyid 4508-0001-GAKubuntuDesktop
 P time_limit 900.0
 P tpsjob 16
 P version stable
